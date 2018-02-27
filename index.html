@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Zwolek">
+	<link rel="icon" href="img/logo.ico">
+	<title>Al Ahly</title>
+	<!-- Plugins Styles -->
+	<link href="css/plugins.min.css" rel="stylesheet">
+	<!-- Core Styles -->
+	<link href="css/app.min.css" rel="stylesheet">
+</head>
+
+<body class="style">
+
+<!-- ////////// Preloader //////////-->
+<div id="preloader"></div>
+
+<!-- ////////// Header ////////// -->
+<div id="header" class="">
+	
+	<div class="header-left">
+		<button id="mobile-menu" class="mobile hamburger hamburger--squeeze is-active" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span> <!-- /hamburger-box -->
+		</button> <!-- /hamburger -->
+		<div id="brand">
+			<a href="index.html" class="brand-wrapper">
+				<img src="img/logo.png" class="img-fluid" alt="" style="max-height: 50px;">
+				<span class="title">Al Ahly SC</span>
+			</a> <!-- /brand-wrapper -->
+		</div> <!-- /brand -->
+		<button id="mobile-btn" type="button" class="btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+	</div> <!-- /header-left -->
+
+	<div class="header-toggle" style="background-color: #ee0000;
+    height: 55px;">
+	<div class="header-content header-hidden">   
+	
+	<div class="left">
+
+		<button id="menu-btn" class="hamburger hamburger--squeeze is-active" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span> <!-- /hamburger-box -->
+		</button> <!-- /hamburger -->
+
+	</div> <!-- /left -->
+	
+	<div class="right">
+
+		<div class="input-group">
+			<input id="search" type="text" class="form-control" placeholder="Search for...">
+			<span class="input-group-btn">
+			  <button id="search-btn" class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</span> <!-- /input-group-btn -->
+		</div> <!-- /input-group -->
+
+		<ul class="nav">
+	
+			<li class="nav-item hidden-sm-down"><button id="btn-slide" class="btn"><i class="fa fa-cog" aria-hidden="true"></i></button></li>
+
+			<!-- alerts -->
+			<li class="nav-item alerts dropdown">
+
+			<a class="dropdown-toggle mobile-link" href="#" id="notification_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<i id="icon-notification" class="fa fa-bell" aria-hidden="true"></i>
+				<span class="status status-pulse hidden-sm-down"></span>
+				<span class="hidden-md-up">Notifications</span>
+			</a> <!-- /dropdown-toggle -->
+
+			<div class="dropdown-menu">
+
+			  <div class="dropdown-title">latest notifications
+				<button type="button" id="btn-mute" class="btn"><i class="fa fa-bell-slash" aria-hidden="true"></i>
+				</button></div>
+
+				<div class="notifications-scroll">
+			       
+
+					<!--  item 1 -->
+					<div class="list-group-item">
+						<a href="#" class="item success">
+							<div class="item-media"> 
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div> <!-- /item-media -->
+							<div class="item-content">
+								<p><strong>Success:</strong> Your file is upload successfully</p>
+								<div class="info"> 45 min ago</div>
+							</div> <!-- /item-content -->
+						</a> <!-- /item -->
+					</div> <!-- /list-group-item -->                           
+
+					<!--  item 2 -->
+					<div class="list-group-item">
+						<a href="#" class="item warning">
+							<div class="item-media"> 
+								<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+							</div> <!-- /item-media -->
+							<div class="item-content">
+								<p><strong>Warning!</strong> Something went wrong</p>
+								<div class="info"> 1 hour 15 min ago</div>
+							</div> <!-- /item-content -->
+						</a> <!-- /item -->
+					</div> <!-- /list-group-item -->
+
+				</div> <!-- /notifications-scroll -->
+
+				<div class="dropdown-footer">
+					<a href="#" class="all">see all</a>
+				</div> <!-- /dropdown-footer -->
+
+			</div> <!-- /dropdown-menu -->
+
+			</li> <!-- /alerts -->              
+
+			<!-- profile -->
+			<li class="nav-item profile dropdown hidden-sm-down">
+			<a class="dropdown-toggle" href="#" id="profile_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<img src="img/profile/profile-header.jpg" class="img-fluid" alt="">
+			</a> <!-- /dropdown-toggle -->
+				<div class="dropdown-menu" aria-labelledby="profile_dropdown">
+					<div class="profile-detalis ">
+						<div class="profile-img">
+							<img src="img/profile/profile-drop.jpg" class="img-fluid" alt="">
+						</div> <!-- /profile-img -->
+						<a class="dropdown-item profile-name" href="#">Captain's profile</a>
+						<div class="profile-links">
+							<a href="#" class="link">Edit Image </a>
+							<a href="#" class="link">View Profile</a>   
+						</div> <!-- /profile-links -->
+					</div> <!-- /profile-detalis -->
+					<a class="dropdown-item single-link" href="#">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						Inbox
+					</a> <!-- /dropdown-item -->    
+
+					<div class="dropdown-divider"></div>            
+					<a class="dropdown-item single-link" href="#">
+						<i class="fa fa-sign-out" aria-hidden="true"></i>
+						Sign Out
+					</a> <!-- /dropdown-item -->           
+				</div> <!-- /dropdown-menu -->
+			</li> <!-- /profile -->
+			
+			<li class="nav-item hidden-md-up"><a href="#" class="mobile-link"><i class="fa fa-users" aria-hidden="true"></i>Profile</a></li>
+			<li class="nav-item hidden-md-up"><a href="#" id="mobile-slide" class="mobile-link"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+			<li class="nav-item hidden-md-up"><a href="#" class="mobile-link"><i class="fa fa-envelope" aria-hidden="true"></i>Inbox</a></li>
+			<li class="nav-item hidden-md-up"><a href="#" class="mobile-link"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
+
+		</ul> <!-- /nav -->
+	</div> <!-- /navbar-right -->
+
+	</div> <!-- /header-content -->
+	</div> <!-- /header-toggle -->
+
+</div> <!-- /header -->
+
+<!-- ////////// Page ////////// -->
+<div id="page">
+
+	<!-- ////////// Left Sidebar ////////// -->
+	<div id="left-sidebar" class="">
+	<div class="bg"></div>
+	<nav id="nav" class="sidebar-nav menu-scroll">
+
+		<ul id="menu" class="side-nav metismenu">
+			<!-- header section -->
+			<li class="sidebar-header">Menu</li>
+
+			<!-- single link -->
+			<li><a href="index.html" class="collapse active"><i class="fa fa-home" aria-hidden="true"></i><span class="drop-header">Home</span></a></li>  
+
+
+			<!-- header section -->
+			<li class="sidebar-header">Managment</li>
+
+			<!-- single link -->
+			<li><a href="pages/cards.html" class="collapse"><i class="fa fa-building" aria-hidden="true"></i><span class="drop-header">Project Managment</span></a></li>
+
+
+			<!-- single link -->
+			<li><a href="#" class="collapse"><i class="fa fa-wrench" aria-hidden="true"></i><span class="drop-header">Issuing Work Orders</span></a></li>
+
+
+			<!-- single link -->
+			<li><a href="#" class="collapse"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span class="drop-header">Reports Issuing</span></a></li>
+
+			<!-- single link -->
+			<li><a href="#" class="collapse"><i class="fa fa-user" aria-hidden="true"></i><span class="drop-header">Human Resources</span></a></li>
+
+
+			<!-- header section -->
+			<li class="sidebar-header">Schedule</li>
+
+			<!-- dropdown -->
+			<li class="dropdown">
+				<a class="chevron collapse" href="#" aria-expanded="true"><i class="fa fa-users" aria-hidden="true"></i></i><span class="drop-header">Meetings</span></a>
+				<ul class="drop-menu one-drop" aria-expanded="true">
+					<li><a href="#">Organize A Meeting</a></li>
+					<li><a href="#">Scheduled Meetings</a></li>     
+				</ul> <!-- /drop-menu -->
+			</li> <!-- /dropdown --> 
+
+
+			<!-- single link -->
+			<li><a href="#" class="collapse"><i class="fa fa-calendar" aria-hidden="true"></i><span class="drop-header">Calendar</span></a></li>
+
+
+			<!-- header section -->
+			<li class="sidebar-header">Online Communications</li>
+
+
+			<!-- dropdown -->
+			<li class="dropdown">
+				<a class="chevron collapse" href="#" aria-expanded="true"><i class="fa fa-envelope" aria-hidden="true"></i><span class="drop-header">Mailbox</span></a>
+				<ul class="drop-menu one-drop" aria-expanded="true">
+					<li><a href="#">Inbox</a></li>
+					<li><a href="#">Create Message</a></li>     
+				</ul> <!-- /drop-menu -->
+			</li> <!-- /dropdown -->    
+
+
+			<!-- single link -->
+			<li><a href="#" class="collapse "><i class="fa fa-comments" aria-hidden="true"></i><span class="drop-header">Chat</span>
+			<div class="badge badge-primary">2</div></a></li>
+			 
+
+
+			<!-- header section -->
+			<li class="sidebar-header">Pages</li>
+
+
+			<!-- dropdown -->
+			<li class="dropdown">
+				<a class="chevron collapse" href="#" aria-expanded="true"><i class="fa fa-external-link" aria-hidden="true"></i><span class="drop-header">Go to...</span></a>
+				<ul class="drop-menu one-drop" aria-expanded="true">
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">Fan page</a></li>     
+					<li><a href="#">Your membership page</a></li>     
+				</ul> <!-- /drop-menu -->
+			</li> <!-- /dropdown -->    
+
+		</ul> <!-- /menu -->
+
+	</nav> <!-- /sidebar-nav -->
+
+	</div> <!-- /left-sidebar -->
+
+	<!-- ////////// Content ////////// -->
+	<div id="content">
+
+		<!-- ////////// Page Title & Breadcrumbs //////////-->
+		<div class="row">
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>Dashboard</h4>
+				<p class="text-muted">Welcome to Dashboard</p>
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+
+		<div class="row" style="display: none;">
+			
+			 <!-- ////////// Sale Chart ////////// -->
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="card dashboard-widget sale-widget">
+					<div class="card-heading">
+						<div class="top-heading">
+							<h5>Sales</h5>
+							<div class="tools">
+								<button type="button" class="btn-tools btn-hide-card">
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</button> <!-- /btn-hide -->
+								<button type="button" class="btn-tools btn-refresh-card">
+									<i class="fa fa-refresh" aria-hidden="true"></i>
+								</button> <!-- /btn-refresh -->
+								<button type="button" class="btn-tools btn-close-card">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button> <!-- /btn-close -->
+							</div> <!-- /tools -->
+						</div> <!-- /top-heading -->
+						<ul class="list-unstyled chart-options">
+							<li>               
+								<div class="option-1"><span class="status"></span>Last Month</div>
+							</li> <!-- /li -->
+							<li>
+								<div class="option-2"><span class="status"></span>Last Year</div>
+							</li> <!-- /li -->                
+							<li>
+								<div class="option-3"><span class="status"></span>Total</div>
+							</li> <!-- /li -->
+						</ul> <!-- /chart-options -->
+					</div> <!-- /card-heading -->
+					<div class="card-body p-0">
+						<canvas id="sale_chart">
+						</canvas> <!-- /sale_chart -->
+					</div> <!-- /card-body -->
+				</div> <!-- /card -->
+			</div> <!-- /col -->
+			
+		</div> <!-- /row -->
+		
+		<div class="row">
+			
+			<!-- ////////// Earnings Widget ////////// -->
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 col-xl-4">
+				<div class="card dashboard-widget earnings-widget">
+					<div class="card-heading">
+						<div class="top-heading">
+							<h5>Visits</h5>
+							<div class="tools">
+								<button type="button" class="btn-tools btn-hide-card">
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</button> <!-- /btn-hide -->
+								<button type="button" class="btn-tools btn-refresh-card">
+									<i class="fa fa-refresh" aria-hidden="true"></i>
+								</button> <!-- /btn-refresh -->
+								<button type="button" class="btn-tools btn-close-card">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button> <!-- /btn-close -->
+							</div> <!-- /tools -->
+						</div> <!-- /top-heading -->   
+					</div> <!-- /card-heading -->
+					<div class="card-body">
+						<canvas id="earnings_chart">
+						</canvas> <!-- /earnings_chart -->
+					</div> <!-- /card-body -->
+					<!-- ef1919 #f34c4c -->
+					<div class="card-footer row"> 
+						<div class=" col-xs col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<p><span style="background-color: #f34c4c; margin: 5px; max-height: 10px; max-width: 25px; color: #f34c4c">...</span>Real Visits</p>
+						</div> <!-- /item -->
+
+						<div class=" col-xs col-sm-4 col-md-4 col-lg-4 col-xl-4">
+							<p><span style="background-color: #ef1919; margin: 5px; max-height: 10px; max-width: 25px; color: #ef1919;">...</span>Expected Visits</p>
+						</div> <!-- /item -->                 
+					</div> <!-- /card-footer -->
+				</div> <!-- /card -->
+			</div> <!-- /col -->
+			
+			<!-- ////////// Visits Widget ////////// -->
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 col-xl-4">
+				<div class="card dashboard-widget visits-widget">
+					<div class="card-heading">
+						<div class="top-heading">
+							<h5>Members Satisfaction</h5>
+							<div class="tools">
+								<button type="button" class="btn-tools btn-hide-card">
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</button> <!-- /btn-hide -->
+								<button type="button" class="btn-tools btn-refresh-card">
+									<i class="fa fa-refresh" aria-hidden="true"></i>
+								</button> <!-- /btn-refresh -->
+								<button type="button" class="btn-tools btn-close-card">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button> <!-- /btn-close -->
+							</div> <!-- /tools -->
+						</div> <!-- /top-heading -->   
+					</div> <!-- /card-heading -->
+					<div class="card-body">
+						<div class="chart-wrapper">       
+							<canvas id="visitors_chart"></canvas>
+						</div> <!-- /chart-wrapper -->
+					</div> <!-- /card-body -->
+					<div class="card-footer row">
+						<div class="col-xs col-sm-9 col-md-9 col-lg-6 col-xl-8">
+							<a href="#">See more</a>
+						</div> <!-- /col -->                  
+					</div> <!-- /card-footer -->
+				</div> <!-- /card -->
+			</div> <!-- /col -->         
+
+			<!-- ////////// Server Usage Widget ////////// -->
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 col-xl-4">
+				<div class="card dashboard-widget server-widget">
+					<div class="card-heading">
+						<div class="top-heading">
+							<h5>Project Progress</h5>
+							<div class="tools">
+								<button type="button" class="btn-tools btn-hide-card">
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</button> <!-- /btn-hide -->
+								<button type="button" class="btn-tools btn-refresh-card">
+									<i class="fa fa-refresh" aria-hidden="true"></i>
+								</button> <!-- /btn-refresh -->
+								<button type="button" class="btn-tools btn-close-card">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button> <!-- /btn-close -->
+							</div> <!-- /tools -->
+						</div> <!-- /top-heading -->   
+					</div> <!-- /card-heading -->
+					<div class="card-body">
+						<h5>Project One</h5>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary progress-bar-md" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%</div>
+						</div> <!-- /progress -->                  
+						<h5>Project Two</h5>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary progress-bar-md" role="progressbar" style="width: 79%;" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">79%</div>
+						</div> <!-- /progress -->                  
+						<h5>Project Three</h5>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary progress-bar-md" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+						</div> <!-- /progress -->                  
+						<h5>Project Four</h5>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary progress-bar-md" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+						</div> <!-- /progress -->
+					</div> <!-- /card-body -->
+					<div class="card-footer row"> 
+						<div class=" col-xs col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<a href="pages/cards.html">See more</a>
+						</div> <!-- /item -->
+              
+					</div> <!-- /card-footer -->
+				</div> <!-- /card -->
+			</div> <!-- /col -->
+
+		</div> <!-- /row -->
+
+		<div class="row">   
+
+			<!-- ////////// Memberships //////////-->
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 col-xl-8">        
+				<div class="card dashboard-widget">
+					<div class="card-heading">
+						<div class="top-heading">
+							<h5>Memberships</h5>
+							<div class="tools">
+								<button type="button" class="btn-tools btn-hide-card">
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</button> <!-- /btn-hide -->
+								<button type="button" class="btn-tools btn-refresh-card">
+									<i class="fa fa-refresh" aria-hidden="true"></i>
+								</button> <!-- /btn-refresh -->
+								<button type="button" class="btn-tools btn-close-card">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button> <!-- /btn-close -->
+							</div> <!-- /tools -->
+						</div> <!-- /top-heading -->   
+					</div> <!-- /card-heading -->
+					<div class="card-body">
+					<table id="dashboard-table" class="team-table table table-responsive table-striped"> 
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Class</th>
+								<th>No. of members</th>
+								<th>Age</th>
+								<th>Member since</th>
+							</tr> <!-- /tr -->
+						</thead> <!-- /thead -->
+						<tbody>
+							<tr>
+								<td>M.Salah</td>
+								<td>Class B</td>
+								<td>5</td>
+								<td>61</td>
+								<td>July,1999</td>
+							</tr> <!-- /tr -->
+							<tr>
+								<td>M.Salah</td>
+								<td>Premium class</td>
+								<td>4</td>
+								<td>63</td>
+								<td>May,2001</td>
+							</tr> <!-- /tr -->
+							<tr>
+								<td>M.Salah</td>
+								<td>Class A</td>
+								<td>4</td>
+								<td>66</td>
+								<td>Jan,1998</td>
+							</tr> <!-- /tr -->
+							<tr>
+								<td>M.Salah</td>
+								<td>Premium class</td>
+								<td>2</td>
+								<td>22</td>
+								<td>April,2015</td>
+							</tr> <!-- /tr -->
+							<tr>
+								<td>M.Salah</td>
+								<td>Class B</td>
+								<td>3</td>
+								<td>33</td>
+								<td>May,2011</td>
+							</tr> <!-- /tr -->
+						</tbody> <!-- /tbody -->
+						<tfoot>
+							<tr>
+								<th>Name</th>
+								<th>Class</th>
+								<th>No. of members</th>
+								<th>Age</th>
+								<th>Member since</th>
+							</tr> <!-- /tr -->
+						</tfoot> <!-- /tfoot -->
+					</table> <!-- /table-responsive -->
+					</div> <!-- /card-body -->
+
+					<div class="card-footer row"> 
+						<div class=" col-xs col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<a href="#">See more</a>
+						</div> <!-- /item -->
+              
+					</div> <!-- /card-footer -->
+				</div> <!-- /card -->
+			</div> <!-- /col -->  
+
+			<!-- ////////// Location Widget //////////-->
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 col-xl-4" style="display: none;">
+				<div class="card dashboard-widget sale-widget">
+					<div class="card-heading">
+						<div class="top-heading">
+							<h5>Location</h5>
+							<div class="tools">
+								<button type="button" class="btn-tools btn-hide-card">
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</button> <!-- /btn-hide -->
+								<button type="button" class="btn-tools btn-refresh-card">
+									<i class="fa fa-refresh" aria-hidden="true"></i>
+								</button> <!-- /btn-refresh -->
+								<button type="button" class="btn-tools btn-close-card">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button> <!-- /btn-close -->
+							</div> <!-- /tools -->
+						</div> <!-- /top-heading -->
+					</div> <!-- /card-heading -->
+					<div class="card-body">
+						<div id="world-vmap" class="map-widget"></div>
+					</div> <!-- /card-body -->
+				</div> <!-- /card -->   
+			</div> <!-- /col -->
+
+		</div> <!-- /row --> 
+
+	</div> <!-- /content -->
+
+	<!-- ////////// Right Sidebar ////////// -->
+	<div id="right-sidebar">
+
+	<!-- Nav tabs -->
+	<ul id="sidebar-tabs" class="nav nav-tabs" role="tablist">
+		<li class="nav-item">
+			<a class="nav-link active" data-toggle="tab" href="#chat" role="tab">chat</a>
+		</li> <!-- /nav-item -->
+
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="tab" href="#todo" role="tab">todo</a>
+		</li> <!-- /nav-item -->
+	</ul> <!-- /sidebar-tabs -->
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+
+	<div id="chat" class="tab-pane active" role="tabpanel">
+
+		<div class="tab-header">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search">
+				<span class="input-group-btn">
+					<button class="btn btn-secondary" type="button">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button> <!-- /btn -->
+				</span> <!-- input-group-btn -->
+			</div> <!-- /input-group -->
+		</div> <!-- /tab-header -->
+		
+		<div class="chat-wrapper">
+			<div class="chat-scroll">
+
+				<div class="conversation">
+				<h6 class="chat-title">Latest Conversation</h6>
+					<a href="#" class="chat-item">
+						<div class="chat-media">
+							<img src="img/chat/chat-profile1.jpg" class="rounded-circle" alt="">
+						</div> <!-- /chat-media -->
+						<div class="chat-message">
+							<div class="name">Captain One</div> 
+							<div class="status status-online"></div> 
+							<p>Dummy Words</p>
+						</div> <!-- /chat-message -->
+					</a> <!-- /chat-item -->                
+					<a href="#" class="chat-item">
+						<div class="chat-media">
+							<img src="img/chat/chat-profile2.jpg" class="rounded-circle" alt="">
+						</div> <!-- /chat-media -->
+						<div class="chat-message">
+							<div class="name">Captain Two</div> 
+							<div class="status status-busy"></div> 
+							<p>Dummy Words</p>
+						</div> <!-- /chat-message -->
+					</a> <!-- /chat-item -->                     
+					<a href="#" class="chat-item">
+						<div class="chat-media">
+							<img src="img/chat/chat-profile3.jpg" class="rounded-circle" alt="">
+						</div> <!-- /chat-media -->
+						<div class="chat-message">
+							<div class="name">Captain Three</div> 
+							<div class="status status-away"></div> 
+							<p>Dummy Words</p>
+						</div> <!-- /chat-message -->
+					</a> <!-- /chat-item -->  
+				</div> <!-- /conversation -->
+				
+				<div class="contact">
+				<h6 class="chat-title">Others</h6>
+					<a href="#" class="chat-item">
+						<div class="chat-media">
+							<img src="img/chat/chat-profile4.jpg" class="rounded-circle" alt="">
+						</div> <!-- /chat-media -->
+						<div class="chat-message">
+							<div class="name">Andrew Doe</div> 
+							<div class="status status-offline"></div> 
+							<p>Lorem ipsum dolor sit amet, consectetur.</p>
+						</div> <!-- /chat-message -->
+					</a> <!-- /chat-item -->                     
+					<a href="#" class="chat-item">
+						<div class="chat-media">
+							<img src="img/chat/chat-profile5.jpg" class="rounded-circle" alt="">
+						</div> <!-- /chat-media -->
+						<div class="chat-message">
+							<div class="name">Anna Doe</div> 
+							<div class="status status-offline"></div> 
+							<p>Nunc sit amet ante lobortis</p>
+						</div> <!-- /chat-message -->
+					</a> <!-- /chat-item -->                     
+					<a href="#" class="chat-item">
+						<div class="chat-media">
+							<img src="img/chat/chat-profile6.jpg" class="rounded-circle" alt="">
+						</div> <!-- /chat-media -->
+						<div class="chat-message">
+							<div class="name">Barbara Doe</div> 
+							<div class="status status-offline"></div> 
+							<p>Donec suscipit lacus in sem interdum lacinia.</p>
+						</div> <!-- /chat-message -->
+					</a> <!-- /chat-item -->
+				</div> <!-- /contact -->
+
+			</div> <!-- /chat-scroll -->
+		</div> <!-- /chat-wrapper -->
+
+		<div class="tab-footer">
+			<div class="wrapper">  
+				<h6>Matthew Doe</h6>
+				<div class="dropdown dropup">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="status status-online"></span>Online</button>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item"><span class="status status-away"></span>Away</a>
+						<a href="#" class="dropdown-item"><span class="status status-busy"></span>Busy</a>
+						<a href="#" class="dropdown-item"><span class="status status-offline"></span>Offline</a>
+						<a href="#" class="dropdown-item"><span class="status status-online"></span>Online</a>
+					</div> <!-- /dropdown-menu -->
+				</div> <!-- /dropdown -->
+			</div> <!-- /wrapper -->
+		</div> <!-- /tab-footer -->
+		
+		<div class="chat-msg">
+
+			<div class="contact-detalis">
+				<h6>Andrew Doe</h6>
+				<button id="close_chat" class="btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+				<p>last active 2 Hours ago</p>
+			</div> <!-- /contact-detalis -->
+			
+			<div class="msg-content">
+			<div class="msg-wrapper">
+				<div class="msg-scroll">   
+					<ul class="list-unstyled">
+						<li class="quest">
+							<div class="msg">Lorem ipsum.</div>
+						</li> <!-- /quest -->      
+						<li class="self"> 
+							<div class="msg"> Phasellus auctor volutpat ante, ac tincidunt lacus ullamcorper. </div>
+						</li> <!-- /self -->               
+						<li class="quest">
+							<div class="msg"> Aliquam elementum non eget. </div> 
+						</li> <!-- /quest -->    
+						<li class="self"> 
+							<div class="msg"> Cras condimentum. </div> 
+						</li> <!-- /self -->                      
+					</ul> <!-- /ul -->
+				</div> <!-- /msg-scroll -->
+			</div> <!-- /msg-wrapper -->
+			</div> <!-- /msg-content -->
+
+			<div class="tab-footer">
+				<div class="wrapper">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Message">
+						<span class="input-group-btn">
+							<button class="btn btn-secondary" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+						</span> <!-- /input-group-btn -->
+					</div> <!-- /input-group -->
+				</div> <!-- /wrapper -->
+			</div> <!-- /tab-footer -->  
+
+		</div> <!-- /chat-msg -->
+
+		</div> <!-- /tab-pane -->
+
+		<div class="tab-pane" id="todo" role="tabpanel">
+
+			<div class="tab-header">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Add new task">
+					<span class="input-group-btn">
+						<button class="btn btn-secondary" type="button">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</button> <!-- /btn -->
+					</span> <!-- input-group-btn -->
+				</div> <!-- /input-group -->
+			</div> <!-- /tab-header -->
+
+			<div class="todo-content">
+				<div class="todo-wrapper">
+					<div class="todo-scroll">
+
+						<div class="todo-item">
+							<h6>Today</h6>
+							<div class="form-check">
+								<div class="checkbox checkbox-primary">   
+									<input id="checkbox01" class="check" type="checkbox"/>
+									<label for="checkbox01">Check projects </label>
+								</div> <!-- /checkbox -->
+							</div> <!-- /form-check -->                        
+							<div class="form-check">
+								<div class="checkbox checkbox-primary">   
+									<input id="checkbox02" class="check" type="checkbox"/>
+									<label for="checkbox02">Change password for admin</label>
+								</div> <!-- /checkbox -->
+							</div> <!-- /form-check -->                        
+							<div class="form-check">
+								<div class="checkbox checkbox-primary">   
+									<input id="checkbox03" class="check" type="checkbox"/>
+									<label for="checkbox03">Check database</label>
+								</div> <!-- /checkbox -->
+							</div> <!-- /form-check -->          
+						</div> <!-- /todo-item -->                  
+
+						<div class="todo-item">
+							<h6>Done</h6>
+							<div class="form-check done">
+								<div class="checkbox checkbox-primary">   
+									<input id="checkbox04" class="check" type="checkbox"/>
+									<label for="checkbox04">Send mail to Captian One</label>
+								</div> <!-- /checkbox -->
+							</div> <!-- /form-check -->                       
+							<div class="form-check done">
+								<div class="checkbox checkbox-primary">   
+									<input id="checkbox05" class="check" type="checkbox"/>
+									<label for="checkbox05">Arrange meeting</label>
+								</div> <!-- /checkbox -->
+							</div> <!-- /form-check -->                        
+							<div class="form-check done">
+								<div class="checkbox checkbox-primary">   
+									<input id="checkbox06" class="check" type="checkbox"/>
+									<label for="checkbox06">Add new work order</label>
+								</div> <!-- /checkbox -->
+							</div> <!-- /form-check -->
+						</div> <!-- /todo-item -->    
+
+					</div> <!-- /todo-scroll -->
+				</div> <!-- /todo-wrapper -->
+			</div> <!-- /todo-content -->
+
+		</div> <!-- /tab-pane -->
+
+	</div> <!-- /tab-content -->
+
+	</div> <!-- /right-sidebar -->
+
+</div> <!-- /page -->
+
+<!-- Core Plugins (necessary for Vega plugins)  -->
+<script src="js/app.min.js"></script>
+<!-- Dashboard Scripts -->
+<script src="js/dashboard.min.js"></script>
+<!-- Custom Scripts -->
+<script src="js/custom.min.js"></script>
+
+</body>
+</html>
+				
